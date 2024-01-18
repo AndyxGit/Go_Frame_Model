@@ -1,0 +1,33 @@
+{
+  "go.useLanguageServer": true,
+  "go.languageServerExperimentalFeatures": {
+      "diagnostics": true
+  },
+  "go.autocompleteUnimportedPackages": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "golang.go",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.configPath": ".prettierrc",
+  "sonarlint.connectedMode.servers": [
+    {
+      "serverId": "sonarIntegracion",
+      "serverUrl": "http://sonar01apl.claro.amx:9000",
+      "token": "squ_cfe85a8ac14f78768a543be4a15073b4848a970e",
+      "disableNotifications": false
+    }
+  ],
+  "sonarlint.connectedMode.project": {
+    "connectionId": "sonarIntegracion",
+    "projectKey": "sp-front-design-lib"
+  },
+  "go.formatTool": "goimports",
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+  }
+}
